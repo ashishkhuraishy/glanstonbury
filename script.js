@@ -233,6 +233,7 @@ $('#reg-form').submit(function() {
 
 
     if(formErrorfname == false && formErrorlname == false && formErroremail == false && formErrorcemail == false && formErrormobile == false && formErrorland == false && formErrorpost == false && formErroraddl1 == false && formErroraddl2 == false && formErrortown == false){
+      $("#message").hide();
       alert("Registration Sucessful");
       return true;
     }
