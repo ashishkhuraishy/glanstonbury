@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Glanstonbury | Ticket Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="header_block"><img src="https://cdn.glastonburyfestivals.co.uk/wp-content/themes/glasto/assets/gfx/glastonbury_festival_logo_block.png" /></div>
+  <div class="container">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Glanstonbury</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Shop</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <h1><span id="heading">Glanstonbury</span><br/> Ticket Registration Form</h1>
+  <div id="message">
+    <p>Fill The Form Properly!</p>
+  </div>
+  <form  id="reg-form" class="form-horizontal" name="form1" action="index.html">
+
+  <div class = "title">
+
+   <label for="pwd">Title:</label>
+ <select>
+  <option value="1">Mr</option>
+  <option value="2">Mrs</option>
+  <option value="3">Miss</option>
+  <option value="4">Ms</option>
+ </select>
+
+</div>
+      <div class="firstname">
+    <label for="pwd">First name:</label>
+    <input type="text" class="form-control" id = "firstname" name= "fname"
+	placeholder="Enter first name">
+	<p id="fnameerror" class="redText"> </p>
+
+  </div>
+
+      <div class="lastname">
+    <label for="pwd">Last name:</label>
+    <input type="text" class="form-control" id = "lastname" name= "lname"
+	placeholder="Enter last name">
+  <p id="lnameerror" class="redText"> </p>
+  </div>
+
+      <div class="email address">
+    <label for="pwd">Email Address:</label>
+    <input type="email" class="form-control" id="email-address" name= "emailaddress"
+	placeholder="Enter email address">
+  <p id="emailerror" class="redText"> </p>
+  </div>
+
+      <div class="confirm email address">
+    <label for="pwd">Confirm Email Address:</label>
+    <input type="email" class="form-control"  id= "confirm-email" name= "cemail"
+	placeholder="Confirm email adderess">
+  <p id="cemailerror" class="redText"> </p>
+  </div>
+
+      <div class="Mobile Number">
+    <label for="pwd">Mobile Number:</label>
+    <input type="number" class="form-control" id= "mobile"  name = "MNo"
+     placeholder="Enter Mobile Number"><p id="mobileerror" class="redText"> </p>
+  </div>
+
+      <div class="Landline Number">
+    <label for="pwd">Landline Number:</label>
+    <input type="number" class="form-control"  id="landline"   name = "lNo" placeholder="Enter Landline Number">
+    <p id="landerror" class="redText"> </p>
+  </div>
+
+  <div class="address line 1">
+    <label for="pwd">Address Line 1:</label>
+    <input placeholder="Address Line 1" type="text" class="form-control"  id= "AddressLine1"  name="ALine1" ><p id="addl1error" class="redText"> </p>
+  </div>
+
+  <div class="adrress line 2">
+    <label for="pwd">Address Line 2:</label>
+    <input placeholder="Address Line 2" type="text" class="form-control" id= "AddressLine2" name="Aline2"><p id="addl2error" class="redText"> </p>
+  </div>
+
+   <div class="postcode">
+    <label for="pwd">Postcode:</label>
+    <input placeholder="Postcode" type="number" class="form-control" id="postcode" name="postcode"><p id="posterror" class="redText"> </p>
+  </div>
+
+  <div class="town">
+    <label for="pwd">Town:</label>
+    <input placeholder="Town" type="text" class="form-control" id="town" name="town"><p id="townerror" class="redText"> </p>
+  </div>
+<br>
+
+
+  <div class="dropdown">
+  <label for="dropdown">Country :</label>
+              <select class="btn dropdown">
+                <option value="England">England</option>
+                <option value="Scotland">Scotland</option>
+                <option value="Wales">Wales</option>
+              </select>
+          </div>
+
+     <br>
+  <div class="dropdown">
+  <label for="dropdown">Adult Tickets  :</label>
+              <select class="btn dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+          </div>
+  <br>
+  <div class="dropdown">
+  <label for="dropdown">Child Tickets  :</label>
+              <select class="btn dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+          </div>
+
+<br>
+
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <input type="submit" class="btn btn-primary" value="Register Now"/>
+  </div>
+
+</form>
+<script src="script.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Germania+One');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+body {
+  background-color: #A8B6B9;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.5em;
+}
+
+h1 {
+  color: red;
+  margin-left: 20px;
+}
+.header_block { background: transparent url(https://cdn.glastonburyfestivals.co.uk/wp-content/uploads/2014/03/2017background.png) center center no-repeat; background-size: cover; }
+img
+{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+h1{
+  font-family: 'Germania One', cursive;
+  text-align: center;
+  color: black;
+}
+
+.redText {
+color:#FF4600;
+font-weight:bold;
+display: none;}
+
+#message{
+  background-color: rgba(255, 199, 178, 0.3);
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 10px 20px 10px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 2px solid #FF4600;
+  color: #FF4600;
+  font-size: 2em;
+}
+#heading{
+  font-size: 2em;
+}
+#nav1{
+  background-color: #FFF173;
+  color: #9F9F9F;
+}
+  #nav1:hover{
+    color: black;
+  }
