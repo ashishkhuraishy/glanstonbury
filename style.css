@@ -78,12 +78,6 @@ display: none;}
   font-weight: bold;
 }
 
-ul{
-  justify-content: center;
-  text-align: center;
-  display: inline-block;
-}
-
 form{
   background-color: #6BDBF9;
   padding: 20px;
