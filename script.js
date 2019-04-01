@@ -49,6 +49,7 @@ $(document).ready(function () {
     var fname = $('#firstname').val();
     if(pattern.test(fname) && fname !== ""){
       $('#fnameerror').css("display", "none");
+      $('#firstname').css("border", "none");
       formErrorfname = false;
     }
     else {
@@ -66,6 +67,7 @@ $(document).ready(function () {
     var lname = $('#lastname').val();
     if(pattern.test(lname) && lname !== ""){
       $('#lnameerror').css("display", "none");
+      $('#lastname').css("border", "none");
       formErrorlname = false;
     }
     else {
@@ -83,6 +85,7 @@ $(document).ready(function () {
     var email = $('#email-address').val();
     if(pattern.test(email) && email !== ""){
       $('#emailerror').css("display", "none");
+      $('#email-address').css("border", "none");
       formErroremail = false;
     }
     else {
@@ -101,6 +104,7 @@ $(document).ready(function () {
     if(pattern.test(cemail) && cemail !== ""){
       if(email == cemail){
         $('#cemailerror').css("display", "none");
+        $('#confirm-email').css("border", "none");
         formErrorcemail = false;
       }
       else{
@@ -125,6 +129,7 @@ function check_mobile() {
   var mobile = $('#mobile').val();
   if(pattern.test(mobile) && mobile !== "" && mobile.length == 11){
     $('#mobileerror').css("display", "none");
+    $('#mobile').css("border", "none");
     formErrormobile = false;
   }
   else {
@@ -135,31 +140,14 @@ function check_mobile() {
   }
 }
 
-//Check Landline
-
-
-function check_landline() {
-  var pattern = /^[0-9]+$/;
-  var landline = $('#landline').val();
-  if(pattern.test(landline) && landline !== "" && landline.length == 11){
-    $('#landerror').css("display", "none");
-    formErrorland = false;
-  }
-  else {
-    $('#landerror').text('Enter a Valid Mobile Number');
-    $('#landerror').css("display", "block");
-    $('#landline').css('border', '2px solid #FF4600');
-    formErrorland = true;
-  }
-}
 
 //Check postcode
 
 function check_postcode() {
-  var pattern = /^[0-9]+$/;
   var post = $('#postcode').val();
-  if(pattern.test(post) && post !== "" && post.length == 6){
+  if(post.length <= 7 && post.length >=5){
     $('#posterror').css("display", "none");
+    $('#postcode').css("border", "none");
     formErrorpost = false;
   }
   else {
@@ -176,6 +164,7 @@ function check_addl1() {
   var addl1 = $('#AddressLine1').val();
   if(addl1 !== ""){
     $('#addl1error').css("display", "none");
+    $('#AddressLine1').css("border", "none");
     formErroraddl1 = false;
   }
   else {
@@ -186,28 +175,15 @@ function check_addl1() {
   }
 }
 
-//Check Address Line 2
-
-function check_addl2() {
-  var addl2 = $('#AddressLine2').val();
-  if(addl2 !== ""){
-    $('#addl2error').css("display", "none");
-    formErroraddl2 = false;
-  }
-  else {
-    $('#addl2error').text('Enter Your Address');
-    $('#addl2error').css("display", "block");
-    $('#AddressLine2').css('border', '2px solid #FF4600');
-    formErroraddl2 = true;
-  }
-}
 
 //Check town
 
 function check_town() {
+  var pattern = /^[a-zA-Z]*$/;
   var town = $('#town').val();
-  if(town !== ""){
+  if(pattern.test(town) && town !== ""){
     $('#townerror').css("display", "none");
+    $('#town').css("border", "none");
     formErrortown = false;
   }
   else {
@@ -225,15 +201,12 @@ $('#reg-form').submit(function() {
       check_email();
       check_cemail();
       check_mobile();
-      check_landline();
       check_postcode();
       check_addl1();
-      check_addl2();
       check_town();
 
 
-    if(formErrorfname == false && formErrorlname == false && formErroremail == false && formErrorcemail == false && formErrormobile == false && formErrorland == false && formErrorpost == false && formErroraddl1 == false && formErroraddl2 == false && formErrortown == false){
-      $("#message").hide();
+    if(formErrorfname == false && formErrorlname == false && formErroremail == false && formErrorcemail == false && formErrormobile == false && formErrorpost == false && formErroraddl1 == false && formErrortown == false){
       alert("Registration Sucessful");
       return true;
     }

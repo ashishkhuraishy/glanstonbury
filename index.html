@@ -12,26 +12,32 @@
   <div class="header_block"><img src="https://cdn.glastonburyfestivals.co.uk/wp-content/themes/glasto/assets/gfx/glastonbury_festival_logo_block.png" /></div>
   <div class="container">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+<nav class="navbar navbar-inverse nav-back" style="justify-content: center;">
+  <div class="container-fluid" style="justify-content: center;">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Glanstonbury</a>
+      <a class="navbar-brand logo" href="#">GLANSTONBURY</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Shop</a></li>
+      <li><a href="/" class="blue">Home</a></li>
+      <li><a href="#" class="yellow">About</a></li>
+      <li><a href="#" class="red">Contact</a></li>
+      <li><a href="#" class="green">Shop</a></li>
+      <li><a href="#" class="blue">About</a></li>
+      <li><a href="#" class="red">Contact</a></li>
+      <li><a href="#" class="green">Shop</a></li>
+      <li><a href="#" class="yellow">About</a></li>
+      <li><a href="#" class="green">Contact</a></li>
+      <li><a href="#" class="blue">Shop</a></li>
     </ul>
   </div>
 </nav>
 
 
-  <h1><span id="heading">Glanstonbury</span><br/> Ticket Registration Form</h1>
+  <h1><span id="heading">GLANSTONBURY</span><br/> Ticket Registration Form</h1>
   <div id="message">
-    <p>Fill The Form Properly!</p>
+    <p>Check Out The Error Messages!</p>
   </div>
-  <form  id="reg-form" class="form-horizontal" name="form1" action="index.html">
+  <form  id="reg-form" class="form-horizontal" name="form1" action="index.html" method="post">
 
   <div class = "title">
 
@@ -45,7 +51,7 @@
 
 </div>
       <div class="firstname">
-    <label for="pwd">First name:</label>
+    <label for="pwd">*First name:</label>
     <input type="text" class="form-control" id = "firstname" name= "fname"
 	placeholder="Enter first name">
 	<p id="fnameerror" class="redText"> </p>
@@ -53,28 +59,28 @@
   </div>
 
       <div class="lastname">
-    <label for="pwd">Last name:</label>
+    <label for="pwd">*Last name:</label>
     <input type="text" class="form-control" id = "lastname" name= "lname"
 	placeholder="Enter last name">
   <p id="lnameerror" class="redText"> </p>
   </div>
 
       <div class="email address">
-    <label for="pwd">Email Address:</label>
+    <label for="pwd">*Email Address:</label>
     <input type="email" class="form-control" id="email-address" name= "emailaddress"
 	placeholder="Enter email address">
   <p id="emailerror" class="redText"> </p>
   </div>
 
       <div class="confirm email address">
-    <label for="pwd">Confirm Email Address:</label>
+    <label for="pwd">*Confirm Email Address:</label>
     <input type="email" class="form-control"  id= "confirm-email" name= "cemail"
 	placeholder="Confirm email adderess">
   <p id="cemailerror" class="redText"> </p>
   </div>
 
       <div class="Mobile Number">
-    <label for="pwd">Mobile Number:</label>
+    <label for="pwd">*Mobile Number:</label>
     <input type="number" class="form-control" id= "mobile"  name = "MNo"
      placeholder="Enter Mobile Number"><p id="mobileerror" class="redText"> </p>
   </div>
@@ -86,7 +92,7 @@
   </div>
 
   <div class="address line 1">
-    <label for="pwd">Address Line 1:</label>
+    <label for="pwd">*Address Line 1:</label>
     <input placeholder="Address Line 1" type="text" class="form-control"  id= "AddressLine1"  name="ALine1" ><p id="addl1error" class="redText"> </p>
   </div>
 
@@ -96,12 +102,12 @@
   </div>
 
    <div class="postcode">
-    <label for="pwd">Postcode:</label>
-    <input placeholder="Postcode" type="number" class="form-control" id="postcode" name="postcode"><p id="posterror" class="redText"> </p>
+    <label for="pwd">*Postcode:</label>
+    <input placeholder="Postcode" type="text" class="form-control" id="postcode" name="postcode" maxlength="7" min="5"><p id="posterror" class="redText"> </p>
   </div>
 
   <div class="town">
-    <label for="pwd">Town:</label>
+    <label for="pwd">*Town:</label>
     <input placeholder="Town" type="text" class="form-control" id="town" name="town"><p id="townerror" class="redText"> </p>
   </div>
 <br>
@@ -132,7 +138,7 @@
                 <option value="10">10</option>
               </select>
           </div>
-  <br>
+          <br>
   <div class="dropdown">
   <label for="dropdown">Child Tickets  :</label>
               <select class="btn dropdown">
@@ -150,14 +156,14 @@
           </div>
 
 <br>
-
+<div class="center">
   <div class="checkbox">
     <label><input type="checkbox"> Remember me</label>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
     <input type="submit" class="btn btn-primary" value="Register Now"/>
   </div>
-
+</div>
 </form>
 <script src="script.js" charset="utf-8"></script>
 </body>
